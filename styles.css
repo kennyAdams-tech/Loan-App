@@ -1,0 +1,437 @@
+body{
+    margin: 0px 20px;
+    padding: 0px;
+    display: grid;
+    align-items: center;
+    height: 80vh;
+    background-color: black;
+
+}
+
+.loading{
+    display: grid;
+    /* align-items: center;
+    justify-content: center; */
+    /* place-items: center; */
+    place-content: center;
+   
+}
+
+.loading img {
+    display: none;
+}
+
+.results{
+    display: none;
+    font-weight: lighter;
+}
+
+
+.container{
+    border: 1px solid black;
+    padding: 20px 30px 0px 8px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+.error{
+    text-align: center;
+    color: red;
+    background-color: rgb(227, 233, 233);
+    padding: 10px;
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+    
+}
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+
+.form-group-1 {
+    margin-left: 10px;
+}
+
+
+
+#amount{
+    padding: 10px;
+    width: 90%;
+    outline: none;
+    background-image: url(currency-dollar.svg);
+    background-repeat: no-repeat;
+    /* border: .5px solid black; */
+    background-position: 10px 10px;
+    padding-left: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.form-group-2{
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+
+#interest{
+    padding: 10px;
+    width: 90%;
+    outline: none;
+    background-image: url(percent.svg);
+    background-repeat: no-repeat;
+    /* border: .5px solid black; */
+    background-position: 10px 10px;
+    padding-left: 30px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.form-group-3{
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+#years{
+    padding: 10px;
+    width: 90%;
+    outline: none;
+    padding-left: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.form-group-4{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.button{
+    padding: 10px;
+    width: 92.2%;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.form-group-5{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.form-group-5 span{
+    padding: 10px;
+    width: 50%;
+    outline: none;
+    border: none;
+    border: 2.7px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: rgb(234, 238, 241);
+}
+
+#monthly-payment{
+    padding: 10px;
+    width: 80.8%;
+    outline: none;
+    border: 2px solid rgb(179, 178, 178);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: rgb(234, 238, 241);
+}
+
+.form-group-6{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.form-group-6 span{
+    padding: 10px;
+    width: 50%;
+    outline: none;
+    border: none;
+    border: 2.7px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: rgb(234, 238, 241);
+}
+
+#total-payment{
+    padding: 10px;
+    width: 82.3%;
+    outline: none;
+    border: 2px solid rgb(179, 178, 178);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: rgb(234, 238, 241);
+}
+
+.form-group-7{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.form-group-7 span{
+    padding: 10px;
+    width: 50%;
+    outline: none;
+    border: none;
+    border: 2.7px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: rgb(234, 238, 241);
+}
+
+#total-interest{
+    padding: 10px;
+    width: 82.9%;
+    outline: none;
+    border: 2px solid rgb(179, 178, 178);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: rgb(234, 238, 241);
+}
+
+.results{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: -15px;
+    margin-bottom: -30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width: 1024px){
+    .container{
+        padding-left: 30px;
+    }
+
+    .results{
+        margin-left: -15px;
+    }
+
+    #loan-form{
+        margin-left: 25px;
+    }
+   
+    .button{
+        padding: 10px;
+        width: 94.5%;
+        margin-left: 2px;
+        outline: none;
+        border-radius: 10px;
+        color: white;
+        background-color: black;
+        font-size: 18px;
+    }
+    #monthly-payment{
+        padding: 10px;
+        width: 70%;
+        outline: none;
+        
+        border-radius: 5px;
+        font-size: 17px;
+        background-color: rgb(234, 238, 241);
+    }
+    #total-payment{
+        padding: 10px;
+        width: 72.4%;
+        outline: none;
+        
+        border-radius: 5px;
+        font-size: 17px;
+        background-color: rgb(234, 238, 241);
+    }
+    #total-interest{
+        padding: 10px;
+        width: 73.5%;
+        outline: none;
+        
+        border-radius: 5px;
+        font-size: 17px;
+        background-color: rgb(234, 238, 241);
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        padding-left: 15px;
+    }
+    .results{
+        margin-left: 4px;
+    }
+    #loan-form{
+        margin-left: 15px;
+    }
+    .button{
+        padding: 10px;
+        width: 95.2%;
+        outline: none;
+        margin-left: 4px;
+        border-radius: 10px;
+        color: white;
+        background-color: black;
+        font-size: 18px;
+    }
+    #monthly-payment{
+        padding: 10px;
+        width: 69.5%;
+        outline: none;
+        
+        border-radius: 5px;
+        font-size: 17px;
+        background-color: rgb(234, 238, 241);
+    }
+    #total-payment{
+        padding: 10px;
+        width: 72.8%;
+        outline: none;
+        
+        border-radius: 5px;
+        font-size: 17px;
+        background-color: rgb(234, 238, 241);
+    }
+    #total-interest{
+        padding: 10px;
+        width: 74.2%;
+        outline: none;
+        
+        border-radius: 5px;
+        font-size: 17px;
+        background-color: rgb(234, 238, 241);
+    }
+}
+
+@media (max-width: 568px){
+    .container{
+        padding-left: 10px;
+       
+    }
+
+    .results{
+        margin-left: 5px;
+    }
+    .button{
+        padding: 10px;
+        width: 96.5%;
+        margin-left: 5px;
+        outline: none;
+        border-radius: 10px;
+        color: white;
+        background-color: black;
+        font-size: 18px;
+    }
+    #monthly-payment{
+        padding: 10px;
+        width: 60%;
+        outline: none;
+        
+        border-radius: 5px;
+        font-size: 17px;
+        background-color: rgb(234, 238, 241);
+    }
+    #total-payment{
+        padding: 10px;
+        width: 65.2%;
+        outline: none;
+        
+        border-radius: 5px;
+        font-size: 17px;
+        background-color: rgb(234, 238, 241);
+    }
+    #total-interest{
+        padding: 10px;
+        width: 67.2%;
+        outline: none;
+        
+        border-radius: 5px;
+        font-size: 17px;
+        background-color: rgb(234, 238, 241);
+    }
+}
+
+@media (max-width: 414px){
+    #loan-form{
+        margin-left: -5px;
+    }
+    .results{
+        margin-left: 2.8px;
+    }
+    .button{
+        padding: 10px;
+        width: 100%;
+        margin-left: 5px;
+        outline: none;
+        border-radius: 10px;
+        color: white;
+        background-color: black;
+        font-size: 18px;
+    }
+    #monthly-payment{
+        padding: 10px;
+        width: 37.5%;
+        outline: none;
+        
+        border-radius: 5px;
+        font-size: 17px;
+        background-color: rgb(234, 238, 241);
+    }
+    #total-payment{
+        padding: 10px;
+        width: 46.2%;
+        outline: none;
+        
+        border-radius: 5px;
+        font-size: 17px;
+        background-color: rgb(234, 238, 241);
+    }
+    #total-interest{
+        padding: 10px;
+        width: 48.1%;
+        outline: none;
+        
+        border-radius: 5px;
+        font-size: 17px;
+        background-color: rgb(234, 238, 241);
+    }
+    .loading img {
+       width: 140px;
+    }
+    .error{
+        text-align: center;
+        color: red;
+        background-color: rgb(227, 233, 233);
+        padding: 7px;
+        font-size: 15px;
+        width: 50%;
+        margin: auto;
+        border-radius: 5px;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
